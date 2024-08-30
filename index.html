@@ -1,453 +1,60 @@
-<!doctype html>
-<html><head lang="en">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	
-	<title>Food Distribution</title> 
-	<meta name="description" content="BlackTie.co - Free Handsome Bootstrap Themes" />	    
-	<meta name="keywords" content="themes, bootstrap, free, templates, bootstrap 3, freebie,">    
-	<meta property="og:title" content="">
-
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
-	
-	<link rel="stylesheet" type="text/css" href="css/style.css">	
-	
-	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	
-	<style type="text/css">
-	body{
-		font-family: Verdana, Geneva, sans-serif;
-	}
-	.fancybox{
-		height:200px !important;
-	}
-	*{  
-  margin:0;
-  padding:0;
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><title>Food For Thought</title><meta name="author" content="Scott Cheng"><meta name="description" content="A non-technical intro to CSS level 3"><link href="http://fonts.googleapis.com/css?family=Telex" rel="stylesheet"><link href="style.css" rel="stylesheet"><link rel="shortcut icon" href="favicon.png"><link rel="canonical" href="http://scottcheng.github.com/revolutionary-css3/"></head><body class="impress-not-supported"><div id="fallback-message">You must be either using a mobile browser or an ancient one!<br />
+If the latter, I sincerely suggest you come back in <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>.</div><div id="hint"><p>Use spacebar, arrow keys or page up / down to navigate</p></div><script>if ('ontouchstart' in document.documentElement) {
+  document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
 }
+</script><div id="impress"><div id="title" data-z='500' data-rotate='60' data-rotate-x='-15' data-rotate-y='15' data-scale='1' class="step"><div class="info">Love Food Hate Waste</a></div><h1><span class="noun">Food</span><br />
+<span class="article">For</span><br />
+<span class="adj">Thought</span></h1><div class="subtitle">Food and love are meant for sharing . Not wasting</div></div>
+<div id="impact" data-x='-600' data-y='0' data-rotate='90' data-scale='0.25' class="step"><p><em>20 crore Indians </em>sleep hungry on any given night.</p></div>
+<div id="impact2" data-x='-100' data-y='90' data-rotate='180' data-scale='0.25' class="step"><p>The number of hungry people in India has increased by <em>65 million more than the population of France</em></p></div>
+<div id="impact-old" data-x='-810' data-y='0' data-rotate='90' data-scale='0.25' class="step">
+  <p class="impact2"><em>7 million children died in 2012 because of hunger/malnutrition. </em></p> <br />
 
-body{
-  
-  background-color:#f0f0f0;
-  font-family:helvetica;
-}
-
-a{
-  display:block;
-  color:#ad5482;  
-  text-decoration:none;
-  font-weight:bold;
-  margin-top:40px;
-  text-align:center;
-}
-
-#bg{
-  height:500px;
-  margin-left:auto;
-  margin-right:auto; 
-}
-
-.module{
-  position:relative;
-  top:15%;    
-  height:100%;
-  width:450px;
-  margin-left:auto;
-  margin-right:auto;
-  border-radius:5px;
-  background:RGBA(255,255,255,1);
-    
-  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
-  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
-  
-}
-
-.module ul{
-  list-style-type:none;
-  margin:0;
-}
-
-.tab{
-  float:left;
-  height:60px;
-  width:25%;
-  padding-top:20px;
-  box-sizing:border-box;
-  background:#eeeeee;  
-  text-align:center;
-  cursor:pointer;
-  transition:background .4s;
-}
-
-.tab:first-child{  
-  -webkit-border-radius: 5px 0px 0px 0px;
-  border-radius: 5px 0px 0px 0px;
-}
-
-.tab:last-child{  
-  -webkit-border-radius: 0px 5px 0px 0px;
-  border-radius: 0px 5px 0px 0px;
-}
-
-.tab:hover{  
-  background-color:rgba(0,0,0,.1);
-}
-
-.activeTab{
-  background:#fff;
-}
-
-.activeTab .icon{
-  opacity:1;
-}
-
-.icon{
-  height:24px;
-  width:24px;
-  opacity:.2;
-}
-
-.form{
-  float:left;
-  height:100%;
-  width:100%;
-  box-sizing:border-box;
-  padding:100px;
-}
-
-.textbox{
-  height:50px;
-  width:100%;
-  border-radius:3px;
-  border:rgba(0,0,0,.3) 2px solid;
-  box-sizing:border-box;
-  padding:10px;
-  margin-bottom:30px;
-}
-
-.textbox:focus{
-  outline:none;
-   border:rgba(24,149,215,1) 2px solid;
-   color:rgba(24,149,215,1);
-}
-
-.button{
-  height:50px;
-  width:100%;
-  border-radius:3px;
-  border:rgba(0,0,0,.3) 0px solid;
-  box-sizing:border-box;
-  padding:10px;
-  margin-bottom:30px;
-  background:#90c843;
-  color:#FFF;
-  font-weight:bold;
-  font-size: 12pt;
-  transition:background .4s;
-  cursor:pointer;
-}
-
-.button:hover{
-  background:#80b438;
-  
-}
-.form-horizontal{
-	position: relative;
-	left:-200px;
-}
-.aboutImage{
-	width: 100px;
-}
-.content-row{
-	width: 1500px;
-	margin-left: -100px;
-}
-.issueSolution{
-	background-color: black;
-}
-.mainIcon{
-	width: 100px;
-}
-.loginClass{
-	width: 100px;
-  background: #ea4c88;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 1px;
-  cursor: pointer;
-  padding: 10px 5px;
-  margin: 40px 175px;
-  position: relative;
-  top: -90px;
-  left: 500px;
-}
-.signUpClass{
-	width: 100px;
-  background: #ea4c88;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 1px;
-  cursor: pointer;
-  padding: 10px 5px;
-  margin: 40px 175px;
-  position: relative;
-  top: -207px;
-  left: 650px;
-}
-	</style>
-	
-	<script type="text/javascript">
-	function validateForm() {
-    var username = $('#username').val();
-    var password=$('#password').val();
-
-    if (username === null || username === "") {
-       $("#usernameSpan").html("Please enter username");
-        return false;
-    }
-
-      if (password === null || password === "") {
-        $('#passwordSpan').html("Please enter password");
-        return false;
-    }
-}
-</script>
-	<link rel="prefetch" href="images/zoom.png">
-</head>
-
-<body>
-	<div class="navbar navbar-fixed-top" data-activeslide="1">
-		<div class="container">
-		
-			<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			
-			
-		<div class="nav-collapse collapse navbar-responsive-collapse">
-				<ul class="nav row">
-					<li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon icon-home"></span> <span class="text">HOME</span></a></li>
-					<li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="icon icon-user"></span> <span class="text">ABOUT US</span></a></li>
-					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-briefcase"></span> <span class="text">PORTFOLIO</span></a></li>
-					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">CONTACT</span></a></li>
-				</ul>
-				<div class="row">
-					<div class="col-sm-2 active-menu">
-					<form action="login.html"><input type="submit" name="login" class="loginClass" value="LOG IN"></form>
-		<form action="signUp.html"><input type="submit" name="signUp" class="signUpClass" value="SIGN UP"></form>
-					</div>
-				</div>
-			</div><!-- /.nav-collapse -->
-		</div><!-- /.container -->
-	</div><!-- /.navbar -->
-	
-	
-	<!-- === Arrows === -->
-	<div id="arrows">
-		<div id="arrow-up" class="disabled"></div>
-		<div id="arrow-down"></div>
-		<div id="arrow-left" class="disabled visible-lg"></div>
-		<div id="arrow-right" class="disabled visible-lg"></div>
-	</div><!-- /.arrows -->
-	<!-- === MAIN Background === -->
-	<div class="slide story" id="slide-1" data-slide="1">
-		<div class="container">
-			<div id="home-row-1" class="row clearfix">
-				<div class="col-12">
-					<h1 class="font-semibold">FOOD DISTRIBUTION<span class="font-thin"></span></h1>
-					<h4 class="font-thin"><span class="font-semibold">Love and food are meant for sharing and not wasting.</span></h4>
-					<br>
-					<br>
-				</div><!-- /col-12 -->
-			</div><!-- /row -->
-			<div id="home-row-2" class="row clearfix">
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide"><img src="images/share.png" class="mainIcon"></div><span>VOLUNTEERS</span></div>
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide"><img src="images/transport.png" class="mainIcon"></div><span>TRANSPORT</span></div>
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide"><img src="images/request.png" class="mainIcon"></div><span>REQUEST</span></div>
-			</div><!-- /row -->
-		</div><!-- /container -->
-	</div><!-- /slide1 -->
-	
-	
-	<!-- === Slide 2 === -->
-	<div class="slide story" id="slide-2" data-slide="2">
-		<div class="container">
-			<div class="row title-row">
-				<div class="col-12 font-thin"><span class="font-semibold"></span> </div>
-			</div><!-- /row -->
-			<div class="row line-row">
-				<div class="hr">&nbsp;</div>
-			</div><!-- /row -->
-
-			<div class="row subtitle-row">
-				<div class="col-12 font-thin"><span class="font-semibold">Mission</span>: To connects hungry peoples with excess edible food to feed those in need, instantly.</div>
-			</div><!-- /row -->
-			<div class="row content-row">
-			<div class="col-12 col-lg-2 issueSolution">
-					<h2 class="font-semibold">Food</h2>
-					<h4 class="font-thin">"People whose love to eat are always the best people"    "Food, in the end, in our own tradition, is something holy. It's not about nutrients and calories. It's about sharing. It's about honesty. It's about identity." PLEASE NOT WASTE THE FOOD </h4>
-					<br>
-				</div><!-- /col12 -->
-				<div class="col-12 col-lg-2">
-					<h2 class="font-thin">Share <span class="font-semibold"></span></h2>
-					<img class="aboutImage" src="images/share.png">
-					<h4 class="font-thin">Use our mobile App or website to request a food pick-up when your business or organization has leftovers.</h4>
-				</div><!-- /col12 -->
-				<div class="col-12 col-lg-2">
-					<h2 class="font-thin">Transport <span class="font-semibold"></span></h2>
-					<img class="aboutImage" src="images/transport.png">
-					<h4 class="font-thin">Our algorithm instantly matches your excess food to a nearby recipient agency (like a homeless shelter), based on their needs, as well as an on-demand driver who picks up and delivers the food. All parties are notified and updated in real-time. Individuals can also deliver food from one place to another</h4>
-					<br>
-				</div><!-- /col12 -->
-				<div class="col-12 col-lg-2">
-					<h2 class="font-thin">Request <span class="font-semibold"></span></h2>
-					<img class="aboutImage" src="images/request.jpg">
-					<h4 class="font-thin">Agency requests for food based on their needs. This is in case someone cannot transport but has needs. </h4>
-				</div><!-- /col12 -->
-				<div class="col-12 col-lg-2 issueSolution">
-					<h2 class="font-semibold">Solution</h2>
-					<h4 class="font-thin">We bridge the gap between these issues by connecting people and ensuring that the untouched left over food, can be distributed to people in need of food.Our platform uses technology to streamline the process of food recovery and distribution, giving businesses and organizations the power to fight hunger and food waste within minutes.</h4>
-					<br>
-				</div><!-- /col12 -->
-			</div><!-- /row -->
-		</div><!-- /container -->
-	</div><!-- /slide2 -->
-	
-	<!-- === SLide 3 - Portfolio -->
-	<div class="slide story" id="slide-3" data-slide="3">
-		<div class="row">
-			<div class="col-11 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/one.jpeg"><img class="thumb" src="images/portfolio/one-large.jpeg" alt=""></a></div>
-
-			<div class="col-11 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/two.jpeg"><img class="thumb" src="images/portfolio/two.jpeg" alt=""></a></div>
-
-			<div class="col-11 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/three.jpg"><img class="thumb" src="images/portfolio/three.jpg" alt=""></a></div>
-
-			<div class="col-11 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/four.jpg"><img class="thumb" src="images/portfolio/four.jpg" alt=""></a></div>
-
-			<div class="col-11 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/five.jpeg"><img class="thumb" src="images/portfolio/five.jpeg" alt=""></a></div>
-
-			<div class="col-11 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/six.jpeg"><img class="thumb" src="images/portfolio/six.jpeg" alt=""></a></div>
-
-			</div><!-- /slide3 -->
-	
-	<!-- === Slide 6 / Contact === -->
-	<div class="slide story" id="slide-6" data-slide="6">
-		<div class="container">
-		<h1 class="col-12 font-light">Leave us a</h1>
-		<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="well well-sm">
-                <form class="form-horizontal" method="post">
-                    <fieldset>
-                        <legend class="text-center header">Contact us</legend>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="fname" name="name" type="text" placeholder="First Name:" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="lname" name="name" type="text" placeholder="Last Name:" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="email" name="email" type="text" placeholder="Email Address:" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="phone" name="phone" type="text" placeholder="Contact:" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                            <div class="col-md-8">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message for us here. We will get back to you within 2 working days." rows="7"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-    </div>
 </div>
 
-<style>
-    .header {
-        color: #36A0FF;
-        font-size: 27px;
-        padding: 10px;
-    }
 
-    .bigicon {
-        font-size: 35px;
-        color: #36A0FF;
-    }
-</style>
-		</div><!-- /container -->
-	</div><!-- /Slide 6 -->
-	
-</body>
+<div id="how" data-x='-200' data-y='0' data-scale='100' class="step"><div class="how">SOLN.?</div></div>
+<div id="share" data-x='-2800' data-y='1200' data-scale='0.5' class="step property"><h2>Share</h2><div class="image-wrapper"><img src="img/Share.jpg" height="500" width="700"><div class="caption">Excess food</div></div></div>
 
-	<!-- SCRIPTS -->
-	<script src="js/html5shiv.js"></script>
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/jquery-migrate-1.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
-	<script src="js/script.js"></script>
-	
-	<!-- fancybox init -->
-	<script>
-	$(document).ready(function(e) {
-		var lis = $('.nav > li');
-		menu_focus( lis[0], 1 );
-		
-		$(".fancybox").fancybox({
-			padding: 10,
-			helpers: {
-				overlay: {
-					locked: false
-				}
-			}
-		});
-	
-	});
-	</script>
+<div id="transport" data-x='-1988' data-y='1200' data-scale='0.5' class="step property"><h2>Transport</h2><div class="image-wrapper"><img src="img/Transport.png" height="500" width="500"><div class="caption">Deliver Food</div></div></div>
 
-	<!--footer start-->
-	<footer class="site-footer">
-		<div class="text-center">
-			2023 - Copyright @ NILESH BORASE
-			<a href="index.html#" class="go-top">
-				<i class="fa fa-angle-up"></i>
-			</a>
-		</div>
-	</footer>
-	<!--footer end-->
 
-</html>
+<div id="gradient" data-x='-1176' data-y='1200' data-scale='0.5' class="step property"><h2>Request</h2><div class="image-wrapper" ><img  src="img/Baby.jpg" height="500" width="500"><div class="caption">Acquire Food</div></div></div>
+
+
+  <div id="google-lofter" data-x='-770' data-y='1500' data-z='100' data-rotate-x='-75' data-scale='0.25' class="step"><div class="google-box box"><div class="title">What our application does?</div><div class="content"><div class="google-button">SHARE</div><div class="google-button">TRANSPORT</div><div class="google-button">REQUEST</div></div></div>
+
+  </div>
+
+ 
+  <div id="opacity" data-x='-364' data-y='1200' data-scale='0.5' class="step property"><h2>State Of Food</h2>
+    <div class="content"><div class="renren-button-text">Food wastage is an alarming issue in India. Our street and garbage bins, landfills have sufficient proof to prove it. Weddings, canteens, hotels, social and family functions, households spew out so much food.  </div><div class="info">Source : Internet</div></div></div>
+
+    <div id="transform" data-x='1260' data-y='1200' data-scale='0.5' class="step"><h2>Why No Solution Yet?</h2><div class="content"><div class="tag">No Storage Facilities</div><br/><div class="tag">Lack of Awareness </div><br/><div class="tag">No communication modes</div><br/><div class="tag" font-size = "6">Erratic Supply of Food</div><br/></div></div>
+    <div id="opacity2" data-x='-364' data-y='1200' data-scale='0.5' class="step property"><h2>Future of Our App</h2>
+    <div class="content"><div class="renren-button-text">We aim to provide all opportunities to reduce food waste — and enhance food security and environmental sustainability  worldwide
+ effective utilization of excess leftovers from weddings, parties, restaurants and temples.Food collected in reusable containers, stored in deep freezer and taken to the right destination if edible.
+</div></div></div>
+    <div class="step" data-x="3000" data-y="500" data-z="-2500" data-rotate-x="90" data-rotate-z="-180" data-scale="0.5">
+        <div class="centeredimg"><img src="img/photo.jpg" height= "600" width="500"/></div>
+        <span class="imgcaption">That's it! Thanks for hanging out.</span>
+      </div>
+
+<script src="lib/impress.js"></script><script>impress().init();
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+(function() {
+  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+  po.src = 'https://apis.google.com/js/plusone.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-33401065-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+window.addEventListener('hashchange', function() {
+  _gaq.push(['_trackEvent', 'Step', 'move', window.location.hash]);
+}, false);</script></body></html>
